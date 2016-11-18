@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Clarifai</string>
+    <string name="clarifai_id">QLafXSkKVta3ZyqfNX9EeknIL4kJrYLrs31o6OUZ</string>
+    <string name="clarifai_secret">uQcRpsMQqbWV4QXiGIbY_p06SBjofksP5d2Kq6EQ</string>
+
+
+    <string name="error_external_storage_permission_not_granted">You must accept this permission so we can upload your images!</string>
+
+    <string name="error_while_contacting_api">Error while contacting Clarifai API</string>
+    <string name="no_results_from_api">API did not return any results</string>
+
+    <string name="upload_image_hint">使用此圖片或是案左上角選擇相簿!</string>
+    <string name="drawer_item_recognize_tags">Recognize Concepts in Photo</string>
+    <string name="drawer_item_recognize_colors">Recognize Primary Color in Photo</string>
+</resources>

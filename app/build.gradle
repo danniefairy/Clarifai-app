@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.dannie.myapplication"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: "com.neenbedankt.android-apt"
+dependencies {
+    compile(
+            "com.android.support:appcompat-v7:24.2.1",
+            "com.android.support:recyclerview-v7:24.2.1",
+            "com.android.support:design:24.2.1",
+
+            "com.clarifai.clarifai-api2:core:2.0.2",
+
+
+            // For logging our HTTP outbound + inbound data
+            "com.jakewharton.timber:timber:4.3.0",
+            "com.squareup.okhttp3:logging-interceptor:3.4.1",
+
+            // For runtime permissions on Marshmallow and above
+            "io.reactivex:rxjava:1.1.10",
+            "com.tbruyelle.rxpermissions:rxpermissions:0.7.1@aar",
+    )
+    compile("com.mikepenz:materialdrawer:5.6.0") { transitive = true }
+
+    compile "com.jakewharton:butterknife:8.4.0"
+    compile "com.jakewharton:butterknife-compiler:8.4.0"
+
+}
